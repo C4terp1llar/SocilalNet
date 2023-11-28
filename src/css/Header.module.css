@@ -1,0 +1,50 @@
+@charset "UTF-8";
+.wrapper .logo {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+@font-face {
+  font-family: header-logo-font;
+  src: url(../fonts/IndieFlower-Regular.ttf); }
+@font-face {
+  font-family: main-font;
+  src: url(../fonts/PlaypenSans-VariableFont_wght.ttf); }
+ul {
+  list-style-type: none !important; }
+  ul li {
+    list-style-type: none; }
+    ul li a {
+      text-decoration: none !important; }
+
+/* 
+    для миксинов @imclude
+    для шаблонов @extend    
+*/
+.wrapper {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  font-family: header-logo-font !important;
+  width: 100%;
+  grid-column: span 2;
+  grid-row: span 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15%;
+  background-color: grey;
+  border: 2px solid black; }
+  .wrapper .logo {
+    width: 150px;
+    height: 70px;
+    background-image: url(../img/svg/logo-header.svg);
+    background-size: contain;
+    position: relative; }
+    .wrapper .logo .link {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%; }
+
+/*# sourceMappingURL=Header.module.css.map */

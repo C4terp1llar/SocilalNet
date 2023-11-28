@@ -1,0 +1,38 @@
+@font-face {
+  font-family: header-logo-font;
+  src: url(../fonts/IndieFlower-Regular.ttf); }
+@font-face {
+  font-family: main-font;
+  src: url(../fonts/PlaypenSans-VariableFont_wght.ttf); }
+ul {
+  list-style-type: none !important; }
+  ul li {
+    list-style-type: none; }
+    ul li a {
+      text-decoration: none !important; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  height: 100%; }
+  html body {
+    height: inherit;
+    font-family: main-font;
+    background-color: dimgrey; }
+    html body #root {
+      height: inherit; }
+
+.main-app-wrapper {
+  width: 100%;
+  height: inherit;
+  display: grid;
+  justify-content: unset;
+  align-items: unset;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 6fr 1fr;
+  gap: 10px; }
+
+/*# sourceMappingURL=App.css.map */

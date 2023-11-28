@@ -1,0 +1,7 @@
+@import './Default.scss';
+
+.wrapper{
+    width: 100%;
+    @include position(flex,unset,center);
+    gap: 50px;
+}

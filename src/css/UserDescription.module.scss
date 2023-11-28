@@ -1,0 +1,11 @@
+@import './Default.scss';
+
+.wrapper{
+    @include position(flex,unset,start);
+    flex-direction: column;
+    .description{
+        p{
+            font-size: 18px;
+        }
+    }
+}

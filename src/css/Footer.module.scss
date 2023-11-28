@@ -1,0 +1,10 @@
+@import './Default.scss';
+
+.wrapper{
+    grid-row: span 1; grid-column: span 2;
+    @include position(flex,center, center);
+    background-color: grey;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 2px solid black;
+}

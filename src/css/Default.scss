@@ -1,0 +1,35 @@
+@mixin position($display, $justify, $align){
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin img-position($bg-img ,$bg-size, $bg-pos, $bg-repeat){
+    background-image: $bg-img;
+    background-size: $bg-size;
+    background-position: $bg-pos;
+    background-repeat: $bg-repeat;
+}
+%centerAligne-bg-img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@font-face {
+    font-family: header-logo-font;
+    src: url(../fonts/IndieFlower-Regular.ttf);
+}
+@font-face {
+    font-family: main-font;
+    src: url(../fonts/PlaypenSans-VariableFont_wght.ttf);
+}
+
+ul{
+    list-style-type: none !important;
+    li{
+        list-style-type: none;
+        a{
+            text-decoration: none !important;
+        }
+    }
+}
+

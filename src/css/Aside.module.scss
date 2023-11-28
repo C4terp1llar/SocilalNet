@@ -1,0 +1,49 @@
+@import './Default.scss';
+
+.wrapper{
+    grid-row: span 1; grid-column: span 1;
+    @include position(flex, center, center);
+    flex-direction: column;
+    background-color: grey;
+    border-radius: 15px;
+    border: 2px solid black;
+    .navbar{
+        .list{
+            @include position(flex, center, start);
+            flex-direction: column;
+            gap: 25px;
+            .item{
+                @include position(flex, center, center);
+                gap: 5px;
+                .ico{
+                    width: 20px;height: 20px;
+                    @extend %centerAligne-bg-img;
+                }
+                .ico1{
+                    background-image: url(../img/svg/avatar.svg);
+                }
+                .ico2{
+                    background-image: url(../img/svg/216331_messages_icon.svg);
+                }
+                .ico3{
+                    background-image: url(../img/svg/103657_news_icon.svg);
+                }
+                .ico4{
+                    background-image: url(../img/svg/103634_music_icon.svg);
+                }
+                .ico5{
+                    background-image: url(../img/svg/326699_settings_icon.svg);
+                }
+                .link{
+                    p{
+                        color: black;
+                        font-size: 20px;
+                    }      
+                }
+            }
+        }
+    }
+}
+
+
+

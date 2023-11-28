@@ -1,0 +1,12 @@
+@import './Default.scss';
+
+.wrapper{
+    border-radius: 15px;
+    border: 2px solid black;
+    width: 100px;height: 100px;
+    overflow: hidden;
+    img{
+        width: inherit;height: inherit;
+        object-fit: cover;
+    }
+}

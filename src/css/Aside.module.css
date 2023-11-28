@@ -1,0 +1,57 @@
+.wrapper .navbar .list .item .ico {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+@font-face {
+  font-family: header-logo-font;
+  src: url(../fonts/IndieFlower-Regular.ttf); }
+@font-face {
+  font-family: main-font;
+  src: url(../fonts/PlaypenSans-VariableFont_wght.ttf); }
+ul {
+  list-style-type: none !important; }
+  ul li {
+    list-style-type: none; }
+    ul li a {
+      text-decoration: none !important; }
+
+.wrapper {
+  grid-row: span 1;
+  grid-column: span 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: grey;
+  border-radius: 15px;
+  border: 2px solid black; }
+  .wrapper .navbar .list {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 25px; }
+    .wrapper .navbar .list .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px; }
+      .wrapper .navbar .list .item .ico {
+        width: 20px;
+        height: 20px; }
+      .wrapper .navbar .list .item .ico1 {
+        background-image: url(../img/svg/avatar.svg); }
+      .wrapper .navbar .list .item .ico2 {
+        background-image: url(../img/svg/216331_messages_icon.svg); }
+      .wrapper .navbar .list .item .ico3 {
+        background-image: url(../img/svg/103657_news_icon.svg); }
+      .wrapper .navbar .list .item .ico4 {
+        background-image: url(../img/svg/103634_music_icon.svg); }
+      .wrapper .navbar .list .item .ico5 {
+        background-image: url(../img/svg/326699_settings_icon.svg); }
+      .wrapper .navbar .list .item .link p {
+        color: black;
+        font-size: 20px; }
+
+/*# sourceMappingURL=Aside.module.css.map */

@@ -1,0 +1,20 @@
+@import './Default.scss';
+
+.wrapper{
+    border-radius: 15px;
+    border: 2px solid black;
+    background-color: grey;
+    padding: 25px;
+    @include position(flex,space-between, unset);
+    flex-direction: column;
+    gap: 25px;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-thumb {
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: dimgrey;
+}

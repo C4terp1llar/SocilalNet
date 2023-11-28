@@ -1,0 +1,25 @@
+@font-face {
+  font-family: header-logo-font;
+  src: url(../fonts/IndieFlower-Regular.ttf);
+}
+@font-face {
+  font-family: main-font;
+  src: url(../fonts/PlaypenSans-VariableFont_wght.ttf);
+}
+ul {
+  list-style-type: none !important;
+}
+ul li {
+  list-style-type: none;
+}
+ul li a {
+  text-decoration: none !important;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: unset;
+  align-items: center;
+  gap: 50px;
+}/*# sourceMappingURL=UserInfo.module.css.map */

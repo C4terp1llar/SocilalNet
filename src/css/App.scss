@@ -1,0 +1,27 @@
+@import './Default.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+    body{
+        height: inherit;
+        font-family: main-font;
+        background-color: dimgrey;
+        #root{
+            height: inherit;
+            
+        }
+    }
+}
+
+.main-app-wrapper{
+    width: 100%; height: inherit;
+    @include position(grid, unset, unset);
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 6fr 1fr;
+    gap: 10px;
+}
