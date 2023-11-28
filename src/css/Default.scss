@@ -1,3 +1,4 @@
+$active-font: rgba(0, 0, 0, 0.50);
 @mixin position($display, $justify, $align){
     display: $display;
     justify-content: $justify;

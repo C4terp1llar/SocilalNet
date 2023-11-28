@@ -53,5 +53,7 @@ ul {
       .wrapper .navbar .list .item .link p {
         color: black;
         font-size: 20px; }
+      .wrapper .navbar .list .item .active p {
+        color: rgba(0, 0, 0, 0.5); }
 
 /*# sourceMappingURL=Aside.module.css.map */

@@ -1,6 +1,8 @@
 import React from 'react';
 import s from '../../css/Aside.module.css';
+import {NavLink} from "react-router-dom";
 
+const SelectedLink = ({isActive}) => isActive ?`${s.link} ${s.active}`: s.link;
 const Aside = () => {
     return (
         <aside className={s.wrapper}>
@@ -10,56 +12,58 @@ const Aside = () => {
                         <div className={`${s.ico} ${s.ico1}`}>
         
                         </div>
-                        <a href='#' className={s.link}>
+                        <NavLink to='/profile' className={SelectedLink}>
                             <p>
                                 Profile
                             </p>
-                        </a>
+                        </NavLink>
                     </li>
                     <li className={s.item}>
                         <div className={`${s.ico} ${s.ico2}`}>
 
                         </div>
-                        <a href='#' className={s.link}>
+                        <NavLink to='/dialog' className={SelectedLink}>
                             <p>
                                 Messages
                             </p>
-                        </a>
+                        </NavLink>
                     </li>
                     <li className={s.item}>
                         <div className={`${s.ico} ${s.ico3}`}>
 
                         </div>
-                        <a href='#' className={s.link}>
+                        <NavLink to='news' className={SelectedLink}>
                             <p>
                                 News
                             </p>
-                        </a>
+                        </NavLink>
                     </li>
                     <li className={s.item}>
                         <div className={`${s.ico} ${s.ico4}`}>
 
                         </div>
-                        <a href='#' className={s.link}>
+                        <NavLink to='music' className={SelectedLink}>
                             <p>
                                 Music
                             </p>
-                        </a>
+                        </NavLink>
                     </li>
                     <li className={s.item}>
                         <div className={`${s.ico} ${s.ico5}`}>
 
                         </div>
-                        <a href='#' className={s.link}>
+                        <NavLink to='settings' className={SelectedLink}>
                             <p>
                                 Settings
                             </p>
-                        </a>
+                        </NavLink>
                     </li>
                 </ul>
             </nav>
         </aside>
     );
 }
+
+
 
 export default Aside;

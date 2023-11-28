@@ -1,27 +1,22 @@
 @font-face {
   font-family: header-logo-font;
-  src: url(../fonts/IndieFlower-Regular.ttf);
-}
+  src: url(../fonts/IndieFlower-Regular.ttf); }
 @font-face {
   font-family: main-font;
-  src: url(../fonts/PlaypenSans-VariableFont_wght.ttf);
-}
+  src: url(../fonts/PlaypenSans-VariableFont_wght.ttf); }
 ul {
-  list-style-type: none !important;
-}
-ul li {
-  list-style-type: none;
-}
-ul li a {
-  text-decoration: none !important;
-}
+  list-style-type: none !important; }
+  ul li {
+    list-style-type: none; }
+    ul li a {
+      text-decoration: none !important; }
 
 .wrapper {
   display: flex;
   justify-content: unset;
   align-items: start;
-  flex-direction: column;
-}
-.wrapper .description p {
-  font-size: 18px;
-}/*# sourceMappingURL=UserDescription.module.css.map */
+  flex-direction: column; }
+  .wrapper .description p {
+    font-size: 18px; }
+
+/*# sourceMappingURL=UserDescription.module.css.map */

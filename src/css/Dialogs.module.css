@@ -11,4 +11,14 @@ ul {
     ul li a {
       text-decoration: none !important; }
 
+.wrapper {
+  border-radius: 15px;
+  border: 2px solid black;
+  background-color: grey;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: unset;
+  overflow-y: scroll; }
+
 /*# sourceMappingURL=Dialogs.module.css.map */

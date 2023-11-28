@@ -1,10 +1,11 @@
 import React from 'react';
+import s from '../../css/Dialogs.module.css';
 
 const Dialogs = () =>{
     return(
-        <div>
+        <main className={s.wrapper}>
 
-        </div>
+        </main>
     );
 }
 

@@ -40,6 +40,11 @@
                         font-size: 20px;
                     }      
                 }
+                .active{
+                    p{
+                        color: $active-font;
+                    }
+                }
             }
         }
     }
