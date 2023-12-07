@@ -11,6 +11,14 @@ ul {
     ul li a {
       text-decoration: none !important; }
 
+::-webkit-scrollbar {
+  width: 15px; }
+
+::-webkit-scrollbar-thumb {
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: dimgrey; }
+
 .wrapper {
   width: 100%;
   min-height: 300px;

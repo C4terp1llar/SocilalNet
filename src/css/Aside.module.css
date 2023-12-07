@@ -16,6 +16,14 @@ ul {
     ul li a {
       text-decoration: none !important; }
 
+::-webkit-scrollbar {
+  width: 15px; }
+
+::-webkit-scrollbar-thumb {
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: dimgrey; }
+
 .wrapper {
   grid-row: span 1;
   grid-column: span 1;

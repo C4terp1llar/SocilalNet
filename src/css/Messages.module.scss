@@ -1,18 +1,14 @@
 @import "./Default.scss";
 
 .wrapper{
-    width: 30%;
-    @include position(block, unset, unset);
+    @include position(flex,unset,unset);
+    flex-direction: column;
+    width: 70%; height: 100%;
     border-radius: 15px;
     border: 2px solid black;
-    overflow-y: scroll !important;
     padding: 10px;
-    .list{
-        width: 100%;
-        @include position(flex, unset, center);
-        flex-direction: column;
-        gap: 10px;
-    }
+    overflow-y: scroll;
+    gap: 10px;
 }
 ::-webkit-scrollbar-thumb {
     border: 2px solid black;

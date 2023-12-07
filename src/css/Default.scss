@@ -33,4 +33,12 @@ ul{
         }
     }
 }
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-thumb {
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: dimgrey;
+}
 

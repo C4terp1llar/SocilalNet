@@ -11,6 +11,14 @@ ul {
     ul li a {
       text-decoration: none !important; }
 
+::-webkit-scrollbar {
+  width: 15px; }
+
+::-webkit-scrollbar-thumb {
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: dimgrey; }
+
 .wrapper {
   width: 100%;
   display: flex;
@@ -29,7 +37,8 @@ ul {
       width: 100%;
       display: flex;
       justify-content: space-between;
-      align-items: center; }
+      align-items: center;
+      gap: 10px; }
       .wrapper .publicate .controls button, .wrapper .publicate .controls textarea {
         background-color: whitesmoke;
         font-family: main-font;
@@ -57,6 +66,7 @@ ul {
         border: 2px solid black;
         outline: none; }
       .wrapper .publicate .controls button {
+        min-width: 50px;
         width: 5%;
         height: 50px;
         text-align: center;

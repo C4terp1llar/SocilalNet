@@ -13,6 +13,7 @@
         .controls{
             width: 100%;
             @include position(flex,space-between,center);
+            gap: 10px;
             button, textarea{
                 background-color: whitesmoke;
                 font-family: main-font;
@@ -46,6 +47,7 @@
                 outline: none;
             }
             button{
+                min-width: 50px;
                 width: 5%;height: 50px;
                 text-align: center;
                 cursor: pointer;

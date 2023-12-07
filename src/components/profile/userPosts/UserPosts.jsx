@@ -3,7 +3,9 @@ import s from '../../../css/UserPosts.module.css';
 import Post from './postExample/Post';
 
 
-const UserPosts = () => {
+
+const UserPosts = (props) => {
+    let postsElements = props.postsData.map( post => <Post postId={post.postId} avatar={post.avatar} postContent={post.postContent}/>);
     return (
         <div className={s.wrapper}>
             <div className={s.publicate}>
@@ -13,9 +15,7 @@ const UserPosts = () => {
                     <button type='submit'>Send</button>
                 </div>
             </div>
-            <Post avatar='https://www.1zoom.ru/big2/62/199578-yana.jpg' item='adsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssdasssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss'/>
-            <Post avatar='https://www.1zoom.ru/big2/62/199578-yana.jpg' item='adsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssdasssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss'/>
-            <Post avatar='https://www.1zoom.ru/big2/62/199578-yana.jpg' item='adsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssdasssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss'/>
+            {postsElements}
         </div>
     );
 }
